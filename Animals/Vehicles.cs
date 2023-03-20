@@ -33,4 +33,10 @@ void ShowInfo(){
 
 }
 
+
+
+void TripInfo (int TripDistance){
+    Mileage += TripDistance;
+    Console.WriteLine($"You have traveled {TripDistance} miles for a total of {Mileage}");
+}
 }
