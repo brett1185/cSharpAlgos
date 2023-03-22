@@ -1,1 +1,1 @@
-﻿Dog Harley = new Dog("Carlos", "french bulldog", "brown");
+﻿Dog Harley = new Dog("brown", "poodle");

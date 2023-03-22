@@ -1,32 +1,19 @@
-
-
-class Dog{
-  private  string Name;
-
-  public string _Name{
-    get{
-        return Name;
+public class Animal
+{
+    public string Name;
+    protected string Diet;
+    protected bool IsMammal;
+    public Animal(string name, string diet, bool ismammal)
+    {
+        Name = name;
+        Diet = diet;
+        IsMammal = ismammal;
     }
-    set{
-        Name = value;
-    }
-  }
-
-
-    string Breed;
-    string FurColor;
-
-    public Dog(string n, string b, string f){
-        Name = n;
-        Breed = b;
-        FurColor = f;
-    }
-
-    void Bark(){
-        Console.WriteLine("Bark! Bark!");
-    }
-
-    void Fetch(string Item){
-        Console.WriteLine($"{Name} hurries to fetch the {Item}!");
+        public virtual void ShowInfo()
+    {
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Diet: {Diet}");
+        Console.WriteLine($"Mammal: {IsMammal}");
     }
 }
+
